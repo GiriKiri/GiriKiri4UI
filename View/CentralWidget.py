@@ -17,6 +17,11 @@ class CentralWidget(QWidget) :
     colorImageWidget = QLabel()
     colorImageWidget.setObjectName('realsense color image widget')
     layout.addWidget(colorImageWidget)
+    
+    # ir 위젯 추가
+    irImageWidget = QLabel()
+    irImageWidget.setObjectName('realsense ir image widget')
+    layout.addWidget(irImageWidget)
 
     startButton = QPushButton('Start')
     startButton.setObjectName('realsense start button')
