@@ -71,7 +71,8 @@ class Realsense(Camera) :
     return alignedFrames
 
   def getFrames(self) :
-    frames = self.waitForAlignedFrames()
+    # frames = self.waitForAlignedFrames()
+    frames = self.pipeline.wait_for_frames()
     depthFrame = frames.get_depth_frame()
     # infraredFrame = frames.get_infrared_frame()
     colorFrame = frames.get_color_frame()

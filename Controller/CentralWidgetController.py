@@ -15,7 +15,7 @@ class CentralWidgetController :
     depthImageWidget = centralWidget.findChild(QLabel, 'realsense depth image widget')
     colorImageWidget = centralWidget.findChild(QLabel, 'realsense color image widget')
     #IR 이미지 부분
-    irImageWidget = centralWidget.findChild(QLabel, 'realsense ir frame widget')
+    irImageWidget = centralWidget.findChild(QLabel, 'realsense ir image widget')
 
     startButton = centralWidget.findChild(QPushButton, 'realsense start button')
     stopButton = centralWidget.findChild(QPushButton, 'realsense stop button')

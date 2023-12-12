@@ -73,7 +73,7 @@ class RealsenseController :
       qImage = QtGui.QImage(image, constant.IR_WIDTH, constant.IR_HEIGHT, QtGui.QImage.Format_RGB888)
       pixmap = QtGui.QPixmap.fromImage(qImage)
       pixmap = pixmap.scaled(constant.IMAGEWIDGET_WIDTH, constant.IMAGEWIDGET_HEIGHT, QtCore.Qt.KeepAspectRatio)
-      self.depthImageWidget.setPixmap(pixmap)
+      self.irImageWidget.setPixmap(pixmap)
       
     # ir 이미지 평균 값 출력 함수
     # def printIRAverage(self, image) :
